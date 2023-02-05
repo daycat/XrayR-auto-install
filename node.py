@@ -10,7 +10,7 @@ apt update
 apt install wget -y''')
     print(ssh_stdout.read())
     ssh_stdin, ssh_stdout, ssh_stderr = client.exec_command('''
-wget -N https://raw.githubusercontents.com/Misaka-blog/XrayR-script/master/install.sh && bash install.sh
+wget -N https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh && bash install.sh
 ''')
     print(ssh_stdout.read())
     ssh_stdin, ssh_stdout, ssh_stderr = client.exec_command('''
